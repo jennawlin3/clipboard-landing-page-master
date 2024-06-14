@@ -157,14 +157,19 @@ body {
 }
 
 footer {
+    margin-top: 110px;
+    width: 100%;
+    background-color: #9fabb240;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 110px;
-    background-color: #9fabb240;
-    width: 100%;
-    padding: 40px;
+    padding: 40px; 
 }
 
 .logo-footer {
@@ -207,6 +212,7 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         width: 100vw;
+        min-height: 100vh;
     }
 
     .download-buttons {
@@ -218,6 +224,100 @@ footer {
         max-width: 700px;
     }
 
+    .second p {
+        margin-bottom: 50px;
+    }
+
+    .second img {
+        transform: translateX(-120px);
+        width: auto;
+    }
+
+    .functionalities {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .functionality {
+        width: 30%;
+    }
+
+    .functionality h3 {
+        text-align: start;
+    }
+
+    .functionality p {
+        text-align: start;
+        padding: 0;
+    }
+
+    .third p {
+        max-width: 650px;
+    }
+    
+    .third img {
+        height: 90vh;
+        width: auto;
+    }
+
+    .cards-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .brands-container {
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    .client-brands {
+        width: 30px;
+    }
+
+    .client-brand {
+        width: 110px;
+    }
+
+    .sixth {
+        margin-top: 120px;
+    }
+
+    .sixth p {
+        max-width: 650px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .logo-footer {
+        align-self: center;
+    }
+
+    .menu-container ul li {
+        text-align: start;
+    }
+
+    .social-icons {
+        align-self: center;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
     .second {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -242,74 +342,52 @@ footer {
         width: auto;
     }
 
+    .third img {
+        height: 100%;
+        width: auto;
+    }
+
     .functionalities {
         grid-area: functionalities;
+        display: initial;
+        gap: 0;
     }
 
-    .functionalities h3 {
-        text-align: start;
-    }
-
-    .functionalities p {
-        text-align: start;
-        padding: 0;
-    }
-
-    .third p {
-        max-width: 650px;
-    }
-    
-    .third img {
-        height: 600px;
-    }
-
-    .cards-container {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card {
-        width: 30%;
+    .functionality {
+        width: auto;
     }
 
     .brands-container {
         flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
     }
 
     .client-brands {
         gap: 60px;
     }
 
-    .sixth {
-        margin-top: 120px;
-    }
-
-    .sixth p {
-        max-width: 650px;
-    }
-
-    footer {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        
-    }
-
-    .logo-footer {
-        align-self: center;
-    }
-
     .menu-container {
         margin-left: -100px;
     }
 
-    .menu-container ul li {
-        text-align: start;
+    .footer-container {
+        max-width: 1000px;
     }
 
-    .social-icons {
-        align-self: center;
+}
+
+@media screen and (min-width: 1400px) {
+    .hero-container {
+        min-height: 900px;
+        height: auto;
+    }
+
+    .container {
+        max-width: 1300px;
+    }
+
+    .footer-container {
+        max-width: 1300px;
     }
 }
